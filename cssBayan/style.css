@@ -31,3 +31,41 @@ label {
     overflow: hidden;
 }
 
+/* Hover actions */
+
+.container:hover label {
+    color: black;
+}
+
+.container:hover label:before {
+    content: '\002B';
+    float: right;
+}
+
+.meme:hover .meme-wrapper {
+    height: auto;
+    padding: 20px 30px 10px;
+    margin-top: -5px;
+}
+
+.meme:hover label:before {
+    transition: transform .5s;
+    transform: rotate(45deg);
+}
+
+/* Checked actions */
+
+input:checked + label {
+    color: #000;
+}
+
+input:checked + label:before {
+    transition: transform .5s;
+    transform: rotate(45deg);
+}
+
+input:checked + label > .meme-wrapper {
+    height: auto;
+    padding: 20px 30px 10px;
+    margin-top: -5px;
+}

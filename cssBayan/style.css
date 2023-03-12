@@ -1,0 +1,33 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input{
+    display: none;
+}
+
+label {
+    color: blue;
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.meme {
+    cursor: pointer;
+}
+
+.meme-wrapper {
+    text-align: center;
+    height: 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: padding 1s;
+    overflow: hidden;
+}
+
